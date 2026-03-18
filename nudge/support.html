@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Nudge</title>
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --text-main: #1f2937;
+            --text-muted: #4b5563;
+            --bg-color: #f3f4f6;
+            --container-bg: #ffffff;
+            --border-color: #e5e7eb;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --primary-color: #3b82f6;
+                --text-main: #f9fafb;
+                --text-muted: #9ca3af;
+                --bg-color: #111827;
+                --container-bg: #1f2937;
+                --border-color: #374151;
+            }
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            color: var(--text-main);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 20px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: var(--container-bg);
+            padding: 50px 60px;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            color: var(--text-main);
+            letter-spacing: -0.025em;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-top: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-main);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.75rem;
+        }
+
+        p,
+        li {
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+            font-size: 1.05rem;
+        }
+
+        ul {
+            padding-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            margin-bottom: 3rem;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.15s ease;
+        }
+
+        a:hover {
+            color: var(--text-main);
+            text-decoration: underline;
+        }
+
+        .faq-item {
+            margin-bottom: 1.5rem;
+            background-color: var(--bg-color);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 1.25rem 1.5rem;
+        }
+
+        .faq-question {
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--text-main);
+            margin-bottom: 0.75rem;
+        }
+
+        .faq-answer {
+            color: var(--text-muted);
+            margin: 0;
+            font-size: 1.05rem;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                padding: 30px 20px;
+                margin: 10px auto;
+                border-radius: 12px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Nudge Support</h1>
+        <p class="subtitle">We're here to help you get unstuck.</p>
+
+        <h2>Contact Us</h2>
+        <p>If you need assistance, have feedback, or are experiencing an issue with the Nudge app, please reach out to
+            our support team:</p>
+        <ul>
+            <li><strong>Email:</strong> <a href="mailto:dev@crescentic.com">dev@crescentic.com</a></li>
+            <!-- <li><strong>Website:</strong> <a href="https://tabohraapps.com/nudge">https://tabohraapps.com/nudge</a></li> -->
+        </ul>
+        <p>We aim to respond to all inquiries within 24-48 business hours.</p>
+
+        <h2>Frequently Asked Questions</h2>
+
+
+
+        <div class="faq-item">
+            <div class="faq-question">Do you store my conversations on a server?</div>
+            <p class="faq-answer">
+                Your historical conversation data is stored locally on your device. We pass individual messages securely
+                to our AI provider solely to generate the responses you see. We do not permanently store your chats on
+                our servers or use them to train models. For more details, see our <a href="privacy-policy.html">Privacy
+                    Policy</a>.
+            </p>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Why is the app not generating a response?</div>
+            <p class="faq-answer">
+                Please make sure you have a stable internet connection. If the issue persists, restarting the app or
+                checking for updates in your device's App Store usually resolves connectivity issues. If you still
+                encounter problems, feel free to contact us.
+            </p>
+        </div>
+
+    </div>
+</body>
+
+</html>
